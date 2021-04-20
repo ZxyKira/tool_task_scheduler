@@ -1,7 +1,7 @@
 /* *****************************************************************************************
  *    File Name   :tool_task_scheduler.c
  *    Create Date :2018-09-09
- *    Modufy Date :2021-03-28
+ *    Modufy Date :2021-04-20
  *    Information :
  */
 
@@ -19,23 +19,25 @@
 /*-------------------------------------
  *  tool_task_scheduler_initialze 
  */ 
-bool tool_task_scheduler_initialze(tool_task_scheduler_handle_t* _this, const tool_task_scheduler_config_t *config) {
-  tool_fifo_config_t fifo_cfg;
+bool tool_task_scheduler_initialze(tool_task_scheduler_handle_t* _this, const tool_task_scheduler_config_t *config){
+  void* buffer;
+	int itemSize;
+	int count;
   
-  fifo_cfg.buffer = &config->prtorityHigh.eventBuffer[0];
-  fifo_cfg.count = config->prtorityHigh.bufferQuantity;
-  fifo_cfg.itemSize = sizeof(tool_task_scheduler_event_t);
-  tool_fifo_init(&_this->fifo.high, &fifo_cfg);
+  buffer = &config->prtorityHigh.eventBuffer[0];
+	itemSize = sizeof(tool_task_scheduler_event_t);
+  count = config->prtorityHigh.bufferQuantity;
+  tool_fifo_init(&_this->fifo.high, buffer, itemSize, count);
   
-  fifo_cfg.buffer = &config->prtorityNormal.eventBuffer[0];
-  fifo_cfg.count = config->prtorityNormal.bufferQuantity;
-  fifo_cfg.itemSize = sizeof(tool_task_scheduler_event_t);
-  tool_fifo_init(&_this->fifo.normal, &fifo_cfg);
+  buffer = &config->prtorityNormal.eventBuffer[0];
+  itemSize = sizeof(tool_task_scheduler_event_t);
+  count = config->prtorityNormal.bufferQuantity;
+  tool_fifo_init(&_this->fifo.normal, buffer, itemSize, count);
   
-  fifo_cfg.buffer = &config->prtorityLow.eventBuffer[0];
-  fifo_cfg.count = config->prtorityLow.bufferQuantity;
-  fifo_cfg.itemSize = sizeof(tool_task_scheduler_event_t);
-  tool_fifo_init(&_this->fifo.low, &fifo_cfg);
+  buffer = &config->prtorityLow.eventBuffer[0];
+  itemSize = sizeof(tool_task_scheduler_event_t);
+  count = config->prtorityLow.bufferQuantity;
+  tool_fifo_init(&_this->fifo.low, buffer, itemSize, count);
   
   _this->flag = 0;
   return true;

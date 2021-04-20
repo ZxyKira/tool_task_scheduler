@@ -10,7 +10,7 @@
       <TargetName>Cortex M4F</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
-      <pCCUsed>5060960::V5.06 update 7 (build 960)::.\ARMCC</pCCUsed>
+      <pCCUsed>5060750::V5.06 update 6 (build 750)::ARMCC</pCCUsed>
       <uAC6>0</uAC6>
       <TargetOption>
         <TargetCommonOption>
@@ -185,7 +185,6 @@
             <uocXRam>0</uocXRam>
             <RvdsVP>2</RvdsVP>
             <RvdsMve>0</RvdsMve>
-            <RvdsCdeCp>0</RvdsCdeCp>
             <hadIRAM2>0</hadIRAM2>
             <hadIROM2>0</hadIROM2>
             <StupSel>8</StupSel>
@@ -339,7 +338,7 @@
               <MiscControls></MiscControls>
               <Define></Define>
               <Undefine></Undefine>
-              <IncludePath>..\include;..\source</IncludePath>
+              <IncludePath>..\include;..\source;..\reference\tool_fifo\include</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -352,7 +351,7 @@
             <NoWarn>0</NoWarn>
             <uSurpInc>0</uSurpInc>
             <useXO>0</useXO>
-            <ClangAsOpt>4</ClangAsOpt>
+            <uClangAs>0</uClangAs>
             <VariousControls>
               <MiscControls></MiscControls>
               <Define></Define>
@@ -381,7 +380,7 @@
       </TargetOption>
       <Groups>
         <Group>
-          <GroupName>Source</GroupName>
+          <GroupName>source</GroupName>
           <Files>
             <File>
               <FileName>tool_task_scheduler.c</FileName>
@@ -391,7 +390,7 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>Include</GroupName>
+          <GroupName>include</GroupName>
           <Files>
             <File>
               <FileName>tool_task_scheduler.h</FileName>
@@ -401,7 +400,7 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>tool_fifo</GroupName>
+          <GroupName>reference_tool_fifo</GroupName>
           <Files>
             <File>
               <FileName>tool_fifo.h</FileName>
@@ -591,7 +590,6 @@
             <uocXRam>0</uocXRam>
             <RvdsVP>0</RvdsVP>
             <RvdsMve>0</RvdsMve>
-            <RvdsCdeCp>0</RvdsCdeCp>
             <hadIRAM2>0</hadIRAM2>
             <hadIROM2>0</hadIROM2>
             <StupSel>8</StupSel>
@@ -745,7 +743,7 @@
               <MiscControls></MiscControls>
               <Define></Define>
               <Undefine></Undefine>
-              <IncludePath>..\include;..\source</IncludePath>
+              <IncludePath>..\include;..\source;..\reference\tool_fifo\include</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -758,7 +756,7 @@
             <NoWarn>0</NoWarn>
             <uSurpInc>0</uSurpInc>
             <useXO>0</useXO>
-            <ClangAsOpt>4</ClangAsOpt>
+            <uClangAs>0</uClangAs>
             <VariousControls>
               <MiscControls></MiscControls>
               <Define></Define>
@@ -787,7 +785,7 @@
       </TargetOption>
       <Groups>
         <Group>
-          <GroupName>Source</GroupName>
+          <GroupName>source</GroupName>
           <Files>
             <File>
               <FileName>tool_task_scheduler.c</FileName>
@@ -797,7 +795,7 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>Include</GroupName>
+          <GroupName>include</GroupName>
           <Files>
             <File>
               <FileName>tool_task_scheduler.h</FileName>
@@ -807,7 +805,7 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>tool_fifo</GroupName>
+          <GroupName>reference_tool_fifo</GroupName>
           <Files>
             <File>
               <FileName>tool_fifo.h</FileName>
@@ -997,7 +995,6 @@
             <uocXRam>0</uocXRam>
             <RvdsVP>0</RvdsVP>
             <RvdsMve>0</RvdsMve>
-            <RvdsCdeCp>0</RvdsCdeCp>
             <hadIRAM2>0</hadIRAM2>
             <hadIROM2>0</hadIROM2>
             <StupSel>8</StupSel>
@@ -1151,7 +1148,7 @@
               <MiscControls></MiscControls>
               <Define></Define>
               <Undefine></Undefine>
-              <IncludePath>..\include;..\source</IncludePath>
+              <IncludePath>..\include;..\source;..\reference\tool_fifo\include</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -1164,7 +1161,7 @@
             <NoWarn>0</NoWarn>
             <uSurpInc>0</uSurpInc>
             <useXO>0</useXO>
-            <ClangAsOpt>4</ClangAsOpt>
+            <uClangAs>0</uClangAs>
             <VariousControls>
               <MiscControls></MiscControls>
               <Define></Define>
@@ -1193,7 +1190,7 @@
       </TargetOption>
       <Groups>
         <Group>
-          <GroupName>Source</GroupName>
+          <GroupName>source</GroupName>
           <Files>
             <File>
               <FileName>tool_task_scheduler.c</FileName>
@@ -1203,7 +1200,7 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>Include</GroupName>
+          <GroupName>include</GroupName>
           <Files>
             <File>
               <FileName>tool_task_scheduler.h</FileName>
@@ -1213,7 +1210,7 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>tool_fifo</GroupName>
+          <GroupName>reference_tool_fifo</GroupName>
           <Files>
             <File>
               <FileName>tool_fifo.h</FileName>
@@ -1228,7 +1225,7 @@
       <TargetName>Cortex M0PLUS</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
-      <pCCUsed>5060960::V5.06 update 7 (build 960)::.\ARMCC</pCCUsed>
+      <pCCUsed>5060750::V5.06 update 6 (build 750)::ARMCC</pCCUsed>
       <uAC6>0</uAC6>
       <TargetOption>
         <TargetCommonOption>
@@ -1403,7 +1400,6 @@
             <uocXRam>0</uocXRam>
             <RvdsVP>0</RvdsVP>
             <RvdsMve>0</RvdsMve>
-            <RvdsCdeCp>0</RvdsCdeCp>
             <hadIRAM2>0</hadIRAM2>
             <hadIROM2>0</hadIROM2>
             <StupSel>8</StupSel>
@@ -1570,7 +1566,7 @@
             <NoWarn>0</NoWarn>
             <uSurpInc>0</uSurpInc>
             <useXO>0</useXO>
-            <ClangAsOpt>4</ClangAsOpt>
+            <uClangAs>0</uClangAs>
             <VariousControls>
               <MiscControls></MiscControls>
               <Define></Define>
@@ -1599,7 +1595,7 @@
       </TargetOption>
       <Groups>
         <Group>
-          <GroupName>Source</GroupName>
+          <GroupName>source</GroupName>
           <Files>
             <File>
               <FileName>tool_task_scheduler.c</FileName>
@@ -1609,7 +1605,7 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>Include</GroupName>
+          <GroupName>include</GroupName>
           <Files>
             <File>
               <FileName>tool_task_scheduler.h</FileName>
@@ -1619,7 +1615,7 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>tool_fifo</GroupName>
+          <GroupName>reference_tool_fifo</GroupName>
           <Files>
             <File>
               <FileName>tool_fifo.h</FileName>
@@ -1637,14 +1633,5 @@
     <components/>
     <files/>
   </RTE>
-
-  <LayerInfo>
-    <Layers>
-      <Layer>
-        <LayName>tool_task_scheduler</LayName>
-        <LayPrjMark>1</LayPrjMark>
-      </Layer>
-    </Layers>
-  </LayerInfo>
 
 </Project>
